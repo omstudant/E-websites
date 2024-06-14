@@ -1,0 +1,587 @@
+
+*{
+   margin:0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: sans-serif;
+}
+
+/* home */
+
+.logo{
+    width: 20vh;
+    height: 10vh;
+    margin-left: 55px;
+    cursor: pointer;
+    margin-top: 0px;
+    border-radius: 50%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+}
+
+.header nav{
+     display: flex;
+     align-items: center;
+     position: fixed;
+     justify-content: space-between;
+     background: white;
+     box-shadow: 0 0 10px black;
+     z-index: 1000;
+     right: 0;
+     left: 0;
+     height: 10vh;
+     background-color: rgb(74, 149, 9);
+}
+
+.header nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 80px;
+    cursor: pointer;
+}
+
+.header nav ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: 0.1s;
+}
+
+.header nav ul li a::after{
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background: rgb(255, 234, 0);
+    transition: 0.2s linear;
+}
+
+.header nav ul li a:hover::after{
+    width: 100%;    
+}
+
+.header nav ul li a:hover{
+    color: rgb(255, 234, 0) ;    
+}
+
+.header nav .icon i{
+    justify-content: space-between;
+    padding-right: 35px;
+    cursor: pointer;
+}
+
+.header nav .icon i:hover{
+    color:rgb(255, 234, 0) ;
+}
+
+.header .page {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;   
+    position: relative;
+    top: 0px;
+   
+}
+
+.header .page .main h1{
+    font-size: 60px;
+    padding-top: -50px;
+}
+
+.header .page .main h1 span{
+    color:rgb(255, 234, 0) ;
+    font-family: mv boli;
+}
+
+.header .page .main_img img{
+    width: 800px;
+    padding-top: 50px;
+    padding-left: 100px;
+}
+
+.header p{
+    width: 700px;
+    text-align: justify;
+    position: relative;
+    bottom: 250px;
+    padding-left: 95px;
+    font-size: 20px;
+}
+
+.header button{
+    background-color: azure;
+    font-size: 25px;
+    border-radius: 3px;
+    margin-left: 95px;
+    bottom:27vh;
+    position: relative;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-shadow: 0 0 5px black;
+    box-border:3px;
+    font-family:mv boli;
+    cursor: pointer;
+    border-style: none;
+}
+
+.header button:hover{
+    background-color:rgb(255, 234, 0) ;
+}
+
+
+/* about */
+
+.about .food img{
+    width: 850px;
+    height: 120vh;
+    position: relative;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;   
+    position: relative;
+    margin-top: -10px;
+    padding-top: 20px;
+    margin-left: -20px;
+}
+
+.about .text h1 span{
+    color:rgb(255, 234, 0) ;
+    font-family: mv boli;
+
+}
+
+.about .text{
+    margin-right: 50px;
+    margin-bottom: 25px;
+}
+
+.about .text h1{
+    font-size: 55px;
+    padding-bottom: 40px;
+}
+
+.about .text p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+.about .text h3{
+    padding-bottom: 30px;
+    font-size: 26px;
+}
+
+.about .text button{
+    background-color: azure;
+    font-size: 25px;
+    border-radius: 3px;
+    margin-left: -0.10px;
+    bottom:-7vh;
+    position: relative;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-shadow: 0 0 5px black;
+    box-border:3px;
+    font-family:mv boli;
+    cursor: pointer;
+    border-style: none;
+}
+
+.about .text button:hover{
+    background-color:rgb(255, 234, 0) ;
+}
+
+/* Menu */
+
+
+.menu h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -10px;
+    font-size: 55px;
+}
+
+.menu h1 span{
+    color:rgb(255, 234, 0) ;
+    font-family: mv boli;
+}
+
+.menu h1 span::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    display: block;
+    background-color: rgb(193, 182, 61);
+    position: relative;
+    bottom: 15px;
+}
+
+.menu .box{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 25px;
+    padding-top: 50px;
+}
+
+.menu .box .main_menu{
+    width: 325px;
+    height: 480px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 7px black;
+    border-radius: 3px;
+    
+}
+
+.menu .box .main_menu .burger{
+    width: 300px;
+    height: 245px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 2px;
+}
+
+.menu .box .main_menu .burger img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.menu .box .main_menu .burger:hover img{
+    transform: scale(1.1);
+}
+
+.menu .box .main_menu .heart{
+    width: 45px;
+    height: 45px;
+    float: right;
+    position: relative;
+    margin-top: -240px;
+    margin-right: -8px;
+    border-radius: 7px;
+    opacity: 0;
+    color: black;
+    transition: 0.3s;
+}
+
+.menu .box .main_menu:hover .heart{
+    margin-top: -240px;
+    margin-right: 15px;
+    opacity: 1;
+    position: relative;
+}
+
+.menu .box .main_menu .heart i{
+    font-size: 25px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-shadow:0 0 6px;
+
+}
+
+.menu .box .main_menu .heart i:hover{
+    color: rgb(193, 182, 61);
+}
+
+.menu .box .main_menu .text h3{
+    font-size: 28px;
+    text-align: center;
+    margin-top: 5px;
+    color: rgb(255, 234, 0);
+}
+
+.menu .box .main_menu .text p{
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.menu .box .main_menu .text h4{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 23px;
+}
+
+.menu .box .main_menu .text .icon{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    color: rgb(255, 234, 0);
+}
+
+.menu .box .main_menu .text .btn{
+    justify-content: center;
+    align-items: center;
+    margin-left: 112px;
+    display: flex;
+    margin-top: 7px;
+    font-size: 20px;
+    background-color: azure ;
+    color: black;
+    padding: 5px 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 0 1.5px;
+}
+
+.menu .box .main_menu .text .btn:hover{
+    background-color: rgb(255, 234, 0);
+}
+
+
+/* review */
+
+.review h1{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 55px;
+    margin-top: 65px ;
+}
+
+.review h1 span{
+    font-family: mv boli;
+    color:rgb(255, 234, 0) ;
+}
+
+.review h1 span::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    position: relative;
+    display: block;
+    background-color: rgb(223, 206, 20);
+    bottom: 15px;
+}
+
+.review .box1 {
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 25px;
+    padding-top: 50px;
+} 
+
+.review .box1 .main{
+    width: 325px;
+    height: 480px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 7px black;
+    border-radius: 3px;
+}
+
+.review .box1 .main .image{
+    width: 210px;
+    height: 210px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 0 3px;
+}
+
+.review .box1 .main .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+    cursor: pointer;
+    
+}
+
+.review .box1 .main .image:hover {
+    transform: translateY(-50px);
+}
+
+.review .box1 .main .text1 h2{
+    text-align: center;
+    justify-content: center;
+    padding-top: 18px;
+    position: relative;
+    display:flex ;
+    font-size: 30px;
+}
+
+.review .box1 .main .icons {
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 5px;
+    font-size: 20px;
+}
+
+.review .box1 .main .icons p{
+    justify-content: center;
+    text-align: center;
+    font-size:16px ;
+    padding-top: 10px;
+    padding: 10px 10px;
+}
+
+/* order */
+
+.order{
+    width: 100%;
+    height: 100vh;
+}
+
+.order h1{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 55px;
+    margin-top: 65px ;
+}
+
+.order h1 span{
+    font-family: mv boli;
+    color:rgb(255, 234, 0) ;
+}
+
+.order h1 span::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    position: relative;
+    display: block;
+    background-color: rgb(223, 206, 20);
+    bottom: 15px;
+}
+
+
+.order .order_main .order_image{
+    margin-top: -25px;
+}
+.order .order_main .order_image img{
+    width: 910px;
+    height: 100vh;
+    margin: top -50px ;
+    margin-left: -5px;
+} 
+
+.order .order_main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.order .order_main .om{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    margin: 20px;
+    margin-right: 100px;
+}
+
+.order .order_main .om .input p{
+    line-height: 25px;
+}
+
+.order .order_main .om .input{
+    margin: 5px;
+}
+
+.order .order_main .om .input input{
+    width: 300px;
+    height: 35px;
+    padding: 0 10px;
+    border: 2px solid #cccccc;
+    background: #eeeeee;
+    border-radius: 3px;
+    outline: none;
+}
+
+.order .order_main .om .input input:focus{
+    border:2px solid black;
+}
+
+.order .order_main .om .btn1{
+    padding: 3px 3px;
+    width: 200px;
+    height: 37px;
+    margin: 5px;
+    margin-top: 45px;
+    border-radius: 5px;
+    border: 2px solid #cccccc;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.order .order_main .om .btn1:hover{
+    background-color: rgb(255, 234, 0) ;
+    cursor: pointer;
+}
+
+
+/* footer */
+
+.footer{
+    background-color: #cccccc;
+    width: 100%;
+    margin-top: 85px;
+    height: 200px;
+    box-shadow: 0 0 5px;
+}
+
+.footer .footer_main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    text-align: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.footer .footer_main .detail h2{
+    margin: 10px;
+}
+
+.footer .footer_main .detail p{
+    margin-top: 8px;
+}
+
+.footer .footer_main .detail i{
+    font-size: 25px;
+    padding: 0 5px;
+}
+
+.footer .footer_main .detail i:hover{
+    color:rgb(255, 234, 0) ;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
